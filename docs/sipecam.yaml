@@ -1,0 +1,33 @@
+Name: SiPeCaM (Sitios Permanentes de la Calibración y Monitoreo de la Biodiversidad)
+Description: The SiPeCaM goal is to create a data source that allows to evaluate changes in the biodiversity state, considering key aspect of how does the ecosystem works (behaves?)
+Documentation:
+Contact:
+ManagedBy: "[Conabio](https://www.gob.mx/conabio)"
+UpdateFrequency: TBD
+Tags:
+  - biodiversity
+  -
+License:
+Resources:
+  - Description: Audio, Images and Videos representation of mexican flora and fauna
+    ARN:
+    Region: us-east-1
+    Type: wav, jpg, avi
+    Explore:
+DataAtWork:
+  Tutorials:
+    - Title:
+      URL:
+      AuthorName:
+      AuthorURL:
+      Services:
+  Tools & Applications:
+    - Title:
+      URL:
+      AuthorName:
+      AuthorURL:
+  Publications:
+    - Title: Sitios Permanente de la Calibración y Monitoreo de la Biodiversidad
+      URL: https://monitoreo.conabio.gob.mx/sipecam_files/Proyecto_SiPeCaM_2020_Fase_I.pdf
+      AuthorName:
+      AuthorURL:
