@@ -1,19 +1,19 @@
 Name: SiPeCaM (Sitios Permanentes de la Calibración y Monitoreo de la Biodiversidad)
-Description: The SiPeCaM goal is to create a data source that allows to evaluate changes in the biodiversity state, considering key aspect of how does the ecosystem works (behaves?)
+Description: The SiPeCaM goal is to create a data source that allows to evaluate changes in the biodiversity state, considering key aspect of how does the ecosystem behaves.
 Documentation: https://github.com/CONABIO/sipecam-open-data/blob/main/docs/SiPeCaM.md
-Contact: TBD
+Contact: Michael F. Schmidt
 ManagedBy: "[Conabio](https://monitoreo.conabio.gob.mx/)"
 UpdateFrequency: TBD
 Tags:
   - biodiversity
-  - audio
   - fauna
+  - animals audio
 License: Creative Commons with attribution
 Resources:
-  - Description: Audio representation of mexican fauna
-    ARN:
+  - Description: Audio, video and image representation of mexican fauna
+    ARN: arn:aws:s3:::sipecam-open-data
     Region: us-east-1
-    Type: wav
+    Type: wav, avi, jpg
     Explore:
 DataAtWork:
   Tutorials:
