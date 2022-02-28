@@ -3,17 +3,18 @@ Description: The SiPeCaM goal is to create a data source that allows to evaluate
 Documentation: https://github.com/CONABIO/sipecam-open-data/blob/main/docs/SiPeCaM.md
 Contact: Michael F. Schmidt
 ManagedBy: "[Conabio](https://monitoreo.conabio.gob.mx/)"
-UpdateFrequency: TBD
+UpdateFrequency: Monthly
 Tags:
   - biodiversity
   - fauna
   - animals audio
+  - protected areas
 License: Creative Commons with attribution
 Resources:
   - Description: Audio, video and image representation of mexican fauna
     ARN: arn:aws:s3:::sipecam-open-data
     Region: us-east-1
-    Type: wav, avi, jpg
+    Type: s3 Bucket
     Explore:
 DataAtWork:
   Tutorials:
