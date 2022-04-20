@@ -24,3 +24,16 @@ SiPeCaM has developed a map that might be useful for the researchers; you can fi
 
 A spanish [presentation](https://monitoreo.conabio.gob.mx/sipecam_files/SiPeCaM_Total.pdf) has been made to give more 
 context about the project background.
+
+## Development team contacts
+
+Erick Palacios - epalacios@conabio.gob.mx
+
+Jaime Donlucas - jdonlucas@conabio.gob.mx
+
+Omar Miranda - emiranda@conabio.gob.mx
+
+Sebastián Cadavid - sebastian.cadavid@conabio.gob.mx
+
+Carolina Acosta - carolina.tovany@conabio.gob.mx
+

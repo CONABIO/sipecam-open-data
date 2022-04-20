@@ -1,0 +1,10 @@
+awscli==1.18.69
+boto3==1.17.106
+jupyter==1.0.0
+jupyter-client==7.1.0
+jupyter-console==6.4.0
+jupyter-core==4.9.1
+jupyterlab-pygments==0.1.2
+jupyterlab-widgets==1.0.2
+python-dotenv==0.19.2
+requests==2.26.0
