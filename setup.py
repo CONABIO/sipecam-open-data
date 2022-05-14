@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 from setuptools import find_packages, setup
-import sipecam
+from conabio import src
 
 setup(
-    name="sipecam",
+    name="conabio",
     packages=find_packages(),
     install_requires=[
         "python-dotenv"
     ],
-    version=sipecam.version,
+    version=src.version,
     description="",
     author="Conabio"
 )
