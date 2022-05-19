@@ -1,9 +1,7 @@
 import requests
 
-from conabio.src.login.user import CONFIG
 
-
-def login_alfresco(config=CONFIG):
+def login_alfresco(api_key):
     """
     Login Alfresco with .env credentials
 
@@ -13,7 +11,7 @@ def login_alfresco(config=CONFIG):
     """
     try:
         session = requests.Session()
-        session.headers.update({'x-api-key': config.get("API_KEY")})
+        session.headers.update({'x-api-key': api_key})
 
         return session
     except Exception as e:

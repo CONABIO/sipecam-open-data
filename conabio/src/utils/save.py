@@ -1,5 +1,4 @@
 import json
-import csv
 
 
 def save_json(dictionary, file_path_name, overwrite=True):
@@ -20,6 +19,7 @@ def save_json(dictionary, file_path_name, overwrite=True):
 
 
 def save_list_as_csv(path, header, list_path, overwrite=True):
+    import csv
     write_mode = "w"
     if not overwrite:
         write_mode = "w+"
