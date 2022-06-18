@@ -15,7 +15,8 @@ hence, it is useful for monitoring biodiversity.
 SiPeCaM project data is available to the community free of charge.
 
 The Amazon bucket contains a subset of the complete data set from the project and can be found in:
-`s3://conabio-sipecam-open-data` in the us-east-1 AWS region.
+`s3://sipecam-open-data` in the us-east-1 AWS region, and you can find more information about 
+S3 structure [here](https://github.com/CONABIO/sipecam-open-data/blob/main/docs/s3_information.md).
 
 ## Other Sources
 
