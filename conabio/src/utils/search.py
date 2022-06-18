@@ -1,13 +1,13 @@
 import json
 from conabio.src.login.session import login_alfresco
-from conabio.src.login.user import MAX_ITEMS, INCLUDE_FIELDS
+from conabio.src.login.user import MAX_ITEMS, INCLUDE_FIELDS, CONFIG
 
 
-def search_endpoint(query, api_key, endpoint):
-    session = login_alfresco(api_key)
+def search_endpoint(query, config=CONFIG, skipcount=0):
+    session = login_alfresco(config.get("ALFRESCO_API_KEY"))
 
     req = session.post(
-        endpoint,
+        config.get("ALFRESCO_API_ENDPOINT"),
         data=json.dumps({
             "query": {
                 "query": query,
@@ -16,7 +16,8 @@ def search_endpoint(query, api_key, endpoint):
             "include": INCLUDE_FIELDS,
             "sort": [{"type": "FIELD", "field": "cm:name", "ascending": "false"}],
             "paging": {
-                "maxItems": MAX_ITEMS
+                "maxItems": MAX_ITEMS,
+                "skipCount": skipcount
             }
         })
     )
@@ -26,20 +27,20 @@ def search_endpoint(query, api_key, endpoint):
     return result
 
 
-def search_image_by_cumulus(cumulus_node, endpoint, api_key):
+def search_image_by_cumulus(cumulus_node, config=CONFIG, skipcount=0):
     """
     Only supports 1 cumulus search
     """
-    result = search_image_by_property("sipecam", "CumulusName", cumulus_node,  endpoint, api_key)
+    result = search_image_by_property("sipecam", "CumulusName", cumulus_node, config=config, skipcount=skipcount)
 
     return result
 
 
-def search_image_by_property(model, property, value, endpoint, api_key):
+def search_image_by_property(model, property, value, config=CONFIG, skipcount=0):
     """
     Only supports 1 property to search on
     """
     query = f"+TYPE: \"sipecam:image\" AND ({model}:{property}:\"{value}\")"
-    result = search_endpoint(query, api_key, endpoint)
+    result = search_endpoint(query, config, skipcount=skipcount)
 
     return result
