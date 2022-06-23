@@ -36,7 +36,7 @@ property `sipecam:CumulusName:92`. In summary, we are searching for the images o
 query =  "+TYPE: \"sipecam:image\" AND (sipecam:CumulusName:\"92\")"
 ```
 
-**Obtain results**
+**Call Action**
 ```
 req = session.post(
         config.get("ALFRESCO_API_ENDPOINT"),
@@ -47,6 +47,46 @@ req = session.post(
             },
             "include": ["properties", "path"],
             "sort": [{"type": "FIELD", "field": "cm:name", "ascending": "false"}],
+        })
+    )
+
+result = req.json()
+```
+
+**Result**
+```
+{
+    "list": {
+        "pagination": {
+            "count": 100,
+            "hasMoreItems": true,
+            "totalItems": 2000,
+            "skipCount": 0,
+            "maxItems": 100
+        },
+        "entries": [
+            {
+        ...
+        ]
+    }
+}
+```
+
+**Note:** Default number for `maxItems` is 100, so in case you want to increase it you need to change it in the Call 
+Action to something like:
+```
+req = session.post(
+        config.get("ALFRESCO_API_ENDPOINT"),
+        data=json.dumps({
+            "query": {
+                "query": query,
+                "language": "afts"
+            },
+            "include": ["properties", "path"],
+            "sort": [{"type": "FIELD", "field": "cm:name", "ascending": "false"}],
+            "paging": {
+                "maxItems": MAX_ITEMS
+            }
         })
     )
 
