@@ -3,7 +3,17 @@ import json
 
 def save_json(dictionary, file_path_name, overwrite=True):
     """
+    Save a dictionary
 
+    Parameters
+    ----------
+    dictionary : dict
+
+    file_path_name : string
+        Complete file path with the name of the file
+
+    overwrite : boolean
+        Default is True
     """
     # Serializing json
     json_object = json.dumps(dictionary, indent=4)

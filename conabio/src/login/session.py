@@ -3,7 +3,12 @@ import requests
 
 def login_alfresco(api_key):
     """
-    Login Alfresco with .env credentials
+    Creates a session in Alfresco
+
+    Parameters
+    ----------
+    api_key : string
+        Api key that can come from the .env credentials
 
     Return
     ------
