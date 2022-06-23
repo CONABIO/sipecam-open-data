@@ -14,11 +14,11 @@ The structure folder is the following:
 ```
 sipecam-open-data 
 ├── data/
-│   ├── <cumulus number>/
-│   ├── <node>_<cumulus number>_<random numbers>/
-│   ├── <device name>/
+│   ├── <cumulusr>/
+│   ├── <node nomenclature>/
+│   ├── <serial number device>/
 │   ├── <extraction date (YYYY-MM-DD)>/
-│   └── <TYPE OF DATA>/    (images_videos, audio)
+│   └── <TYPE OF DATA>/    (images_videos, audio) - Audio can be Ultrasonic or Audible
 │       ├── *.JPG
 │       ├── *.AVI
 │       └── *.mp4
