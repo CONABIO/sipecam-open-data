@@ -3,7 +3,7 @@
 If you are working with Linux, add your variables:
 
 ```
-IP_ALFRESCO=<ip alfresco>
+IP_ALFRESCO="api.conabio.gob.mx"
 ALFRESCO_PASSWORD_WEBDAV=<password alfresco webdav>
 ALFRESCO_USER_WEBDAV=<user alfresco webdav>
 ENDPOINT_ALFRESCO_WEBDAV=/alfresco/webdav
