@@ -25,3 +25,8 @@ SiPeCaM has developed a map that might be useful for the researchers; you can fi
 
 A spanish [presentation](https://monitoreo.conabio.gob.mx/sipecam_files/SiPeCaM_Total.pdf) has been made to give more 
 context about the project background.
+
+## More information
+
+If you want to read more about Sipecam in AWS Open Data, click [here](
+https://aws.amazon.com/marketplace/pp/prodview-l7kyum2g2ex7k?sr=0-1&ref_=beagle&applicationId=AWSMPContessa#resources).
