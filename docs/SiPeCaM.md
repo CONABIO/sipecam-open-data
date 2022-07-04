@@ -29,4 +29,4 @@ context about the project background.
 ## More information
 
 If you want to read more about Sipecam in AWS Open Data, click [here](
-https://aws.amazon.com/marketplace/pp/prodview-l7kyum2g2ex7k?sr=0-1&ref_=beagle&applicationId=AWSMPContessa#resources).
+https://aws.amazon.com/marketplace/pp/prodview-l7kyum2g2ex7k?sr=0-1&ref_=beagle&applicationId=AWSMPContessa#resources) and [registry.opendata.aws/sipecam](https://registry.opendata.aws/sipecam/).
